@@ -1,0 +1,115 @@
+/*COMPONENT IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@400;500&display=swap');
+
+/*GLOBAL STYLING*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+    text-align: center;
+    font-size: 40px;
+    padding: 12px;
+}
+
+/*SECTION*/
+
+.jumbotron {
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jumbotron::before {
+    content: "";
+    background-image: url('https://images.unsplash.com/photo-1509927083803-4bd519298ac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.80;  
+}
+
+.bait-section {
+    margin: auto 0 auto 80px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+
+.form-section {
+    background-color: #0884a3;
+    width: 310px;
+    height: 380px;
+    margin: auto 100px auto 0;
+    border: none;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 2.5px 4px #4b4747;
+    text-align: center;
+}
+
+.form-header {
+    font-size: 23px;
+    margin-top: 15px;
+    color: white;
+    font-family: 'Carter One', cursive;
+}
+
+.form-para {
+    font-size: 15px;
+    color: white;
+    margin-top: -5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.coupon-input {
+    margin-top: 25px;
+    padding: 7px 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit-button {
+    background-color: rgb(241, 189, 46);
+    padding: 10px 65px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        flex-direction: column;
+        height: 740px;
+    }
+
+    .bait-section {
+        margin: 40px 0 0 40px;
+        font-size: 20px;
+    }
+    .form-section {
+        margin: 20px auto 20px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 35px;
+    }
+    .bait-section {
+        font-size: 18px;
+    }
+}    
