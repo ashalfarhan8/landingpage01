@@ -90,6 +90,7 @@ header {
     margin-top: 10px;
 }
 
+/*RESPONSIVE iPad/ Tablet Device*/
 @media screen and (max-width: 768px) {
     .jumbotron {
         flex-direction: column;
@@ -105,6 +106,7 @@ header {
     }
 }
 
+/*RESPONSIVE TO MOBILE DEVICE*/
 @media screen and (max-width: 480px) {
     header {
         font-size: 35px;
